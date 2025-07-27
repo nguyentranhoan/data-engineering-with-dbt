@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: ads_performance
+    columns:
+      - name: ad_id
+        tests:
+          - not_null
+          - unique
+      - name: ctr
+        tests:
+          - not_null

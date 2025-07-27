@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: ads_performance
+    description: "Aggregated ad performance metrics"
+    columns:
+      - name: ad_id
+        description: "Unique ad identifier"
+        tests:
+          - not_null
+          - unique
+      - name: total_clicks
+        description: "Total clicks for the ad"
+      - name: total_impressions
+        description: "Total impressions served"
+      - name: ctr
+        description: "Click-through rate"
+        tests:
+          - not_null
